@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Art/UIToolkit/Styles/UIStyles.uss?fileID=7433441132597879392&amp;guid=6ebbbe798c96bf344b8b9360316b9108&amp;type=3#UIStyles" />
+    <ui:VisualElement name="Screen" style="flex-grow: 1;">
+        <ui:VisualElement name="Top" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="Left" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Glacier Game" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TitleLabel" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Right" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Score: 001" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ScoreLabel" style="-unity-text-align: upper-right;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;" />
+        <ui:VisualElement style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

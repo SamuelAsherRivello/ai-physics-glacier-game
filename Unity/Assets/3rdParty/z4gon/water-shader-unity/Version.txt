@@ -1,0 +1,5 @@
+Source Url: 
+* https://github.com/z4gon/water-shader-unity
+
+Changelog: 
+* Moved to /Assets/3rdParty/
