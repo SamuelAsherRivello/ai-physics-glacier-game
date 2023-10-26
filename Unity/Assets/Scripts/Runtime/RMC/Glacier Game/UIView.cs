@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
-namespace RMC.MyProject.Scenes
+namespace RMC.GlacierGame
 {
     //  Namespace Properties ------------------------------
 
@@ -17,30 +18,32 @@ namespace RMC.MyProject.Scenes
 
 
         //  Properties ------------------------------------
-
-
         //  Fields ----------------------------------------
         [SerializeField]
-        private string _samplePublicText;
+        private UIDocument _uiDocument;
+        private Label _scoreLabel;
+        private Label _titleLabel;
 
 
         //  Unity Methods ---------------------------------
         protected void Start()
         {
             Debug.Log($"{GetType().Name}.Start()");
-        }
-
-
-        protected void Update()
-        {
-
+            
+            //AI PROMPT: fetch and store private variables from _uiDocument for #ScoreLabel and #TitleLabel
+            _scoreLabel = _uiDocument.rootVisualElement.Q<Label>("ScoreLabel");
+            _titleLabel = _uiDocument.rootVisualElement.Q<Label>("TitleLabel");
+            
+            //AI PROMPT: set titlelabel to value of "Glacier Game" 
+            _titleLabel.text = "Glacier Game";
         }
 
 
         //  Methods ---------------------------------------
-        public string SamplePublicMethod(string message)
+        public void DisplayScore(int value)
         {
-            return message;
+            //AI PROMPT: set scorelabel to value of "Score: 000"
+            _scoreLabel.text = $"Score: {value:000}";
         }
 
 
@@ -49,5 +52,7 @@ namespace RMC.MyProject.Scenes
         {
 
         }
+
+
     }
 }

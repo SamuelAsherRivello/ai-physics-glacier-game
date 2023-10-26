@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: UIPanelTextSettings
   m_EditorClassIdentifier: 
   m_Version: 
-  m_DefaultFontAsset: {fileID: 11400000, guid: 842c5f3696fbc2648ad656c14fe7acb8, type: 2}
-  m_DefaultFontAssetPath: Fonts & Materials/
-  m_FallbackFontAssets: []
+  m_DefaultFontAsset: {fileID: 0}
+  m_DefaultFontAssetPath: ResourceFonts
+  m_FallbackFontAssets:
+  - {fileID: 11400000, guid: 20f479626571fc04ab1e54bb6ec7c89d, type: 2}
   m_MatchMaterialPreset: 0
   m_MissingCharacterUnicode: 0
   m_ClearDynamicDataOnBuild: 1

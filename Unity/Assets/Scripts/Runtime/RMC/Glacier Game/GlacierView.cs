@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RMC.MyProject.Scenes
+namespace RMC.GlacierGame
 {
     //  Namespace Properties ------------------------------
 
@@ -20,22 +20,12 @@ namespace RMC.MyProject.Scenes
 
 
         //  Fields ----------------------------------------
-        [SerializeField]
-        private string _samplePublicText;
-
 
         //  Unity Methods ---------------------------------
         protected void Start()
         {
             Debug.Log($"{GetType().Name}.Start()");
         }
-
-
-        protected void Update()
-        {
-
-        }
-
 
         //  Methods ---------------------------------------
         public string SamplePublicMethod(string message)

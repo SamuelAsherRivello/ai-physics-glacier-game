@@ -1,8 +1,11 @@
 Label {
-    font-size: 80px;
+    font-size: 87px;
     color: rgb(255, 255, 255);
     text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
     -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-font: initial;
+    -unity-font-definition: url('project://database/Assets/Art/Fonts/IceAndsnowNormal%20SDF.asset?fileID=11400000&guid=20f479626571fc04ab1e54bb6ec7c89d&type=2#IceAndsnowNormal SDF');
+    -unity-font-style: normal;
 }
 
 #Screen {

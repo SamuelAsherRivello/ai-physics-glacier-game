@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RMC.MyProject.Scenes
+namespace RMC.GlacierGame
 {
     //  Namespace Properties ------------------------------
 
