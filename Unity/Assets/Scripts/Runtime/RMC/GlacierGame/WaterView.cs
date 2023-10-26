@@ -11,13 +11,12 @@ namespace RMC.MyProject.Scenes
     /// <summary>
     /// Replace with comments...
     /// </summary>
-    public class Scene01_Intro : MonoBehaviour
+    public class WaterView : MonoBehaviour
     {
         //  Events ----------------------------------------
 
 
         //  Properties ------------------------------------
-        public string SamplePublicText { get { return _samplePublicText; } set { _samplePublicText = value; }}
 
 
         //  Fields ----------------------------------------

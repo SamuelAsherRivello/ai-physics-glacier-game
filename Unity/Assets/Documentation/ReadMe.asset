@@ -38,7 +38,7 @@ MonoBehaviour:
     TextBody: 
     LinkName: 
     LinkUrl: 
-    PingObjectName: Assets/Scenes/Scene_01_Intro
+    PingObjectName: Assets/Scenes/Scene_02_Game
     PingObjectGuid: 72f7cde6697d6214e927b487784a8bea
     MenuItemName: 
     MenuItemPath: 
