@@ -30,7 +30,8 @@ namespace RMC.GlacierGame
         private float horizontalInput;
         private float verticalInput;
         public float speed = 5.0f;
-
+        public float _rotationSpeed = 0.1f;
+        
         protected void Start()
         {
             StorePosition();
@@ -43,11 +44,17 @@ namespace RMC.GlacierGame
             verticalInput = Input.GetAxis("Vertical");
             
         }
-
+        
         protected void FixedUpdate()
         {
             Vector3 force = new Vector3(horizontalInput, 0, verticalInput) * speed;
             _rigidBody.AddForce(force);
+            
+            //AI PROMPT: rotate towards the direction of movement
+            if (force != Vector3.zero)
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(force), _rotationSpeed);
+            }
         }
 
         //  Methods ---------------------------------------
