@@ -20,9 +20,6 @@ namespace RMC.GlacierGame
 
 
         //  Fields ----------------------------------------
-        [SerializeField]
-        private string _samplePublicText;
-
 
         //  Unity Methods ---------------------------------
         protected void Start()
@@ -31,23 +28,8 @@ namespace RMC.GlacierGame
         }
 
 
-        protected void Update()
-        {
-
-        }
-
-
         //  Methods ---------------------------------------
-        public string SamplePublicMethod(string message)
-        {
-            return message;
-        }
-
 
         //  Event Handlers --------------------------------
-        public void Target_OnCompleted(string message)
-        {
-
-        }
     }
 }
